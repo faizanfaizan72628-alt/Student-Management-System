@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+    padding: 30px 15px;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+header{
+    margin-bottom: 25px;
+}
+header h1{
+    color: blue;
+    margin-bottom: 8px;
+}
+header p{
+    color: red;
+}
+.form-section,
+.table-section{
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+input{
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 0;
+}
+form input{
+    flex: 1;
+    min-width: 150px;
+}
+input:focus {
+    outline: 2px solid darkblue;
+    border-color: blue;
+}
+button{
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: white;
+    background:blue ;
+    font-weight: bold;
+}
+button:hover{
+    opacity: 0.85;
+}
+.table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+table-heading h2 {
+    margin-bottom: 0;
+}
+#search {
+    width: 250px;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th,
+td {
+    padding: 15px 12px;
+    border-bottom: 1px solid white;
+    white-space: nowrap;
+}
+th {
+    background: white;
+    color:blue;
+}
+tbody tr:hover {
+    background: white;
+}
+.edit-btn {
+    background: seagreen;
+    margin-right: 5px;
+}
+.delete-btn {
+    background: red;
+}
+#totalStudents {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #475569;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 10px;
+    }
+    .form-section,
+    .table-section {
+        padding: 15px;
+    }
+    .table-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    #search {
+        width: 100%;
+    }
+    form input,
+    form button {
+        width: 100%;
+    }
+}
